@@ -19,10 +19,10 @@ export default class Funcionamento {
 
   estaAberto() {
     const semanaAberto = this.diasSemana.includes(this.diaAgora);
+
     const horarioAberto =
       this.horarioAgora >= this.horarioSemana[0] &&
       this.horarioAgora < this.horarioSemana[1];
-
     return semanaAberto && horarioAberto;
   }
 
